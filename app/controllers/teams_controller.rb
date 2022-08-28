@@ -2,7 +2,7 @@ class TeamsController < ApplicationController
 
 
   def index
-    @teams = Team.all
+    @teams = Team.all.order_by_time_created
   end
 
   def show

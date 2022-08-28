@@ -6,6 +6,9 @@ class Team < ApplicationRecord
   validates :championships_won, presence: true
   validates :currently_leading, inclusion: [true, false]
 
+  def self.order_by_time_created
+    order(created_at: :desc)
+  end
 
 
 end
