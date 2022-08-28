@@ -21,8 +21,22 @@ RSpec.describe 'Team Show page' do
     albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
 
     visit "/teams/#{redbull.id}"
-    save_and_open_page
 
     expect(page).to have_content("Driver Count: 2")
   end
+
+  it 'has a link to the drivers index ' do
+    redbull = Team.create!(name: "Redbull", currently_leading: true, championships_won: 4)
+
+    schumi = redbull.drivers.create!(name: "Michael Schumaker", up_for_hire: true, drivers_age: 19)
+    albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
+
+    visit "/teams/#{redbull.id}"
+    save_and_open_page
+    expect(page).to have_link('Drivers Index')
+    click_link 'Drivers Index'
+    expect(current_path).to eq('/drivers')
+  end
+
+
 end
