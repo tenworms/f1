@@ -247,6 +247,8 @@
           null,
           1,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -293,17 +295,12 @@
           null
         ]
       },
-      "/Users/andrepedro/turing/2module/week1_project/F1/app/controllers/drivers_controller.rb": {
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/controllers/team_drivers_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          0,
-          null,
-          null,
           1,
-          1,
-          null,
           null,
           null,
           null
@@ -316,6 +313,6 @@
         ]
       }
     },
-    "timestamp": 1661725431
+    "timestamp": 1661726676
   }
 }
