@@ -269,6 +269,10 @@
           1,
           null,
           1,
+          0,
+          null,
+          null,
+          1,
           2,
           null,
           null,
@@ -289,11 +293,11 @@
           null,
           null,
           1,
-          2,
+          0,
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
           null
@@ -304,8 +308,23 @@
           1,
           null
         ]
+      },
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/models/driver.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1661727930
+    "timestamp": 1661729055
   }
 }

@@ -10,5 +10,9 @@ class Team < ApplicationRecord
     order(created_at: :desc)
   end
 
+  def count_of_drivers
+    drivers.count
+  end
+
 
 end

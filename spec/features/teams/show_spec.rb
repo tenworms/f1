@@ -12,6 +12,17 @@ RSpec.describe 'Team Show page' do
     expect(page).to have_content(redbull.currently_leading)
     expect(page).to have_content(redbull.championships_won)
     expect(page).to_not have_content(mclaren.championships_won)
+  end
 
+  it 'i see a count of the number of children for this parent' do
+    redbull = Team.create!(name: "Redbull", currently_leading: true, championships_won: 4)
+
+    schumi = redbull.drivers.create!(name: "Michael Schumaker", up_for_hire: true, drivers_age: 19)
+    albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
+
+    visit "/teams/#{redbull.id}"
+    save_and_open_page
+
+    expect(page).to have_content("Driver Count: 2")
   end
 end
