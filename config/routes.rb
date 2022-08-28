@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/teams/:id', to: 'teams#show'
 
   get '/drivers', to: 'drivers#index'
+  get '/drivers/:id', to: 'drivers#show'
 end
