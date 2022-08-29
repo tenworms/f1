@@ -27,16 +27,38 @@ RSpec.describe 'Team Show page' do
 
   it 'has a link to the drivers index ' do
     redbull = Team.create!(name: "Redbull", currently_leading: true, championships_won: 4)
-
     schumi = redbull.drivers.create!(name: "Michael Schumaker", up_for_hire: true, drivers_age: 19)
     albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
 
     visit "/teams/#{redbull.id}"
-    save_and_open_page
     expect(page).to have_link('Drivers Index')
     click_link 'Drivers Index'
     expect(current_path).to eq('/drivers')
   end
+
+  it 'displays a link that takes me to the teams index' do
+    redbull = Team.create!(name: "Redbull", currently_leading: true, championships_won: 4)
+    schumi = redbull.drivers.create!(name: "Michael Schumaker", up_for_hire: true, drivers_age: 19)
+    albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
+
+    visit "/teams/#{redbull.id}"
+    expect(page).to have_link("Teams Index")
+    click_link 'Teams Index'
+    expect(current_path).to eq('/teams')
+  end
+
+  it 'displays a link that takes me to the parents child table name' do
+    redbull = Team.create!(name: "Redbull", currently_leading: true, championships_won: 4)
+    schumi = redbull.drivers.create!(name: "Michael Schumaker", up_for_hire: true, drivers_age: 19)
+    albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
+
+    visit "/teams/#{redbull.id}"
+    expect(page).to have_link("#{redbull.name} drivers")
+    click_link "#{redbull.name} drivers"
+    expect(current_path).to eq("/teams/#{redbull.id}/drivers")
+  end
+
+
 
 
 end
