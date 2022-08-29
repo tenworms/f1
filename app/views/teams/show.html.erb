@@ -1,8 +1,8 @@
 <h1>Team Show page</h1>
 
-<a href="/drivers"> Drivers Index</a>
-
-
+<p><a href="/drivers"> Drivers Index</a></p>
+<p><a href="/teams"> Teams Index</a></p>
+<p><%= link_to "#{@team.name} drivers", "/teams/#{@team.id}/drivers"%></p>
 <p><%= @team.name %></p>
 <p>Driver Count: <%=@team.count_of_drivers%></p>
 <p><%= @team.championships_won %></p>
