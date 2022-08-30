@@ -42,8 +42,11 @@ RSpec.describe 'Team Show page' do
     albon = redbull.drivers.create!(name: "Alex Albon", up_for_hire: false, drivers_age: 20)
 
     visit "/teams/#{redbull.id}"
+
     expect(page).to have_link("Teams Index")
+
     click_link 'Teams Index'
+
     expect(current_path).to eq('/teams')
   end
 

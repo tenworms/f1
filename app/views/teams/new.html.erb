@@ -1,0 +1,11 @@
+<h1>New team page</h1>
+
+<%= form_with url: "/teams", method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :currently_leading %>
+  <%= form.select :currently_leading, options_for_select([ true, false]) %>
+  <%= form.label :championships_won  %>
+  <%= form.number_field :championships_won %>
+  <%= form.submit 'Create New Team' %>
+<% end %>
