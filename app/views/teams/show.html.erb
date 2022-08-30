@@ -1,5 +1,8 @@
 <h1>Team Show page</h1>
 
+<p><%= link_to 'Update Team', "/teams/#{@team.id}/edit" %></p>
+
+
 <p><a href="/drivers"> Drivers Index</a></p>
 <p><a href="/teams"> Teams Index</a></p>
 <p><%= link_to "#{@team.name} drivers", "/teams/#{@team.id}/drivers"%></p>
