@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/teams', to: 'teams#index'
   get '/teams/new', to: 'teams#new'
+  get '/teams/:id/edit', to: 'teams#edit'
+  patch '/teams/:id', to: 'teams#update'
   get '/teams/:id', to: 'teams#show'
   post '/teams', to: 'teams#create'
 

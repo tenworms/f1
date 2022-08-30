@@ -61,6 +61,17 @@ RSpec.describe 'Team Show page' do
     expect(current_path).to eq("/teams/#{redbull.id}/drivers")
   end
 
+  it 'has a link to update the parent' do
+    redbull = Team.create!(name: "Redbull", currently_leading: true, championships_won: 4)
+
+    visit "/teams/#{redbull.id}"
+    
+
+    expect(page).to have_link("Update Team")
+  end
+
+
+
 
 
 

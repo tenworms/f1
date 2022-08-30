@@ -246,6 +246,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null,
           1,
           1,
@@ -260,13 +262,53 @@
           null
         ]
       },
-      "/Users/andrepedro/turing/2module/week1_project/F1/app/controllers/teams_controller.rb": {
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/models/team.rb": {
         "lines": [
           1,
           null,
+          1,
           null,
           1,
-          2,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/models/driver.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/controllers/teams_controller.rb": {
+        "lines": [
+          1,
           null,
           null,
           1,
@@ -274,11 +316,26 @@
           null,
           null,
           1,
+          1,
+          null,
+          null,
+          1,
           null,
           null,
           null,
           1,
           1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           null,
@@ -296,37 +353,8 @@
           1,
           null
         ]
-      },
-      "/Users/andrepedro/turing/2module/week1_project/F1/app/models/team.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/andrepedro/turing/2module/week1_project/F1/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1661881917
+    "timestamp": 1661892887
   }
 }
