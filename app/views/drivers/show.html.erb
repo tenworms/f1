@@ -1,5 +1,8 @@
 <h1>Drivers show page</h1>
 
+<p><%= link_to "Update #{@driver.name}", "/drivers/#{@driver.id}/edit" %></p>
+
+
 <%= @driver.name %>
 <%= @driver.up_for_hire %>
 <%= @driver.drivers_age %>
