@@ -1,0 +1,9 @@
+<%= form_with url: "/drivers/#{@driver.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :up_for_hire %>
+  <%= form.select :up_for_hire, options_for_select([true, false]) %>
+  <%= form.label :drivers_age  %>
+  <%= form.number_field :drivers_age %>
+  <%= form.submit 'Update driver' %>
+<% end %>

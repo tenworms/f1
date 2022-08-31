@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   post '/teams', to: 'teams#create'
 
   get '/drivers', to: 'drivers#index'
+  get '/drivers/:id/edit', to: 'drivers#edit'
+  patch '/drivers/:id', to: 'drivers#update'
   get '/drivers/:id', to: 'drivers#show'
 
   get '/teams/:team_id/drivers', to: 'team_drivers#index'
