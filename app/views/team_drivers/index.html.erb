@@ -1,5 +1,9 @@
 <h1>Team drivers index page</h1>
 
 <% @team.drivers.each do |driver| %>
-<%= driver.name %>
+<p><%= driver.name %></p>
+<p><%= driver.up_for_hire %></p>
+<p><%= driver.drivers_age %></p>
 <% end  %>
+
+<p><%= link_to 'Add a driver', "/teams/#{@team.id}/drivers/new" %></p>

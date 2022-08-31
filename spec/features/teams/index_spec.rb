@@ -28,10 +28,11 @@ RSpec.describe "Driver index page" do
   it 'shows a link to create a new team' do
 
     visit '/teams'
-    
+
     expect(page).to have_link('Create New Team')
 
     click_link 'Create New Team'
+    save_and_open_page
 
     expect(current_path).to eq('/teams/new')
   end

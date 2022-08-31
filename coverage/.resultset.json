@@ -253,6 +253,8 @@
           1,
           null,
           1,
+          1,
+          1,
           null
         ]
       },
@@ -277,7 +279,7 @@
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           null,
@@ -306,21 +308,12 @@
           null
         ]
       },
-      "/Users/andrepedro/turing/2module/week1_project/F1/app/controllers/teams_controller.rb": {
+      "/Users/andrepedro/turing/2module/week1_project/F1/app/controllers/team_drivers_controller.rb": {
         "lines": [
           1,
           null,
-          null,
-          1,
-          0,
-          null,
-          null,
           1,
           1,
-          null,
-          null,
-          1,
-          null,
           null,
           null,
           1,
@@ -328,14 +321,8 @@
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
           1,
           1,
-          1,
-          null,
           1,
           null,
           null,
@@ -355,6 +342,6 @@
         ]
       }
     },
-    "timestamp": 1661892887
+    "timestamp": 1661911496
   }
 }

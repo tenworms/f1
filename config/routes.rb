@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/drivers/:id', to: 'drivers#show'
 
   get '/teams/:team_id/drivers', to: 'team_drivers#index'
+  get '/teams/:team_id/drivers/new', to: 'team_drivers#new'
+  post '/teams/:team_id/drivers', to: 'team_drivers#create'
 end
